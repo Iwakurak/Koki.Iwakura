@@ -269,3 +269,18 @@ footer {
     width: 100%;
   }
 }
+
+.sample {
+	margin: 16px auto;
+	text-align: center;
+	display: block;
+	border: 1px solid #000;
+}
+.sample ul {
+	padding-left: 0;
+	list-style: none;
+	display: inline-block;
+}
+.sample ul li {
+	text-align: left;
+}
