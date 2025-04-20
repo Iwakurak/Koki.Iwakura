@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Welcome Iwakura's Home Page!
+    Koki Iwakura Home Page
   </title>
   <link 
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -19,15 +19,15 @@
   
 <div align="center">
 <hr width="1000">
-<a href="index1.html">自己紹介</a>
-<a href="index2.html">研究活動</a>
-<a href="index3.html">リンク</a>
+<a href="index1.html">Self introduction</a>
+<a href="index2.html">Research</a>
+<a href="index3.html">Link</a>
   
 <hr width="1000"><br>
-<h2 style="font-family:Lucida Grande;">岩倉康樹のホームページです。</h2><br>
+<h2 style="font-family:Lucida Grande;">Iwakura Home Page</h2><br>
   
 <hr width="1000">
-<h3>参加予定のセミナー・集会</h3>
+<h3>Seminor, Conferences</h3>
 
 </div>
 </body>
