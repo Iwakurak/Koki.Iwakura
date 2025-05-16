@@ -1,46 +1,131 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<title>自己紹介</title>
-<link 
-  rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自己紹介</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #fff;
+      color: #000;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+    .centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 800px;
+    }
+    .inner {
+      text-align: center;
+      width: 100%;
+    }
+    .nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+    }
+    .nav a {
+      color: #00f;
+      text-decoration: none;
+    }
+    .hero-title, .section-title, .projects-list li, .footer p {
+      margin: 1em 0;
+    }
+    .projects-list {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 3em;
+    }
+    .left-align {
+      text-align: left;
+      margin: 0 auto 2em;
+      max-width: 600px;
+    }
+    .left-align p {
+      margin-bottom: 1em;
+    }
+    .left-align strong {
+      display: block;
+      margin-bottom: 0.2em;
+    }
+  </style>
 </head>
 <body>
-<br>
+  <div class="centered">
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="inner">
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="index2.html">研究活動</a></li>
+            <li><a href="index3.html">リンク</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <!-- 自己紹介セクション -->
+    <section class="hero">
+      <div class="inner">
+        <h2 class="hero-title">自己紹介</h2>
+      </div>
+    </section>
 
-<center>
-<hr width="500">
-<h4>自己紹介</h4>
-<a href="index2.html">研究活動</a>
-<a href="index3.html">リンク</a><br>
-<hr width="500"><br>
-</center>
+    <section class="section">
+      <div class="left-align">
+        <p><strong>名前</strong><br>A</p>
+        <p><strong>所属</strong><br>B</p>
+        <p><strong>研究分野</strong><br>写像の特異点論, 数理モデル</p>
+        <p><strong>興味</strong><br>トポロジーや特異点が関連した数学に興味があります。</p>
+        <p><strong>メールアドレス</strong><br>C</p>
+      </div>
 
-<div style ="margin: 0 auto; width: 500px;">
+      <div class="inner">
+        <h3 class="section-title">職歴</h3>
+        <ul class="projects-list">
+          <li>2023,6--2024,3 RA</li>
+          <li>2024,4--2025,3 RA</li>
+        </ul>
 
-<p><b>名前</b> : 岩倉康樹 (Koki Iwakura)</p>
-<p><b>所属</b> : 九州大学マス・フォア・イノベーション連係学府</p>
-<p><b>研究分野</b> : 写像の特異点論, 数理モデル. </p>
-<p><b>興味</b> : トポロジーや特異点が関連した数学に興味があります.</p>
-<p><b>メールアドレス</b> : iwakura.koki0105(at)gmail.com ※at=@</p>
+        <h3 class="section-title">TA</h3>
+        <ul class="projects-list">
+          <li>2023年度後期 幾何学II</li>
+          <li>2024年度後期 入門微分積分学I,II</li>
+        </ul>
 
-<h4>職歴</h4>
-<ul>
-  <li>2023,6--2024,3 RA</li> 
-  <li>2024,4--2025,3 RA</li> 
-</ul>
+        <p><a href="index.html">戻る</a></p>
+      </div>
+    </section>
 
-<h4>TA</h4>
-<ul>
-  <li>2023年度後期 幾何学II</li>
-  <li>2024年度後期 入門微分積分学I,II</li>
-</ul>
-
- 
-<center>
-<a href="index.html">戻る</a>
-</center>
-<br>
-</div>
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="inner">
+        <p>&copy; 2025 Iのホームページ</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
+
