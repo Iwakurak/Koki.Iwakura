@@ -16,22 +16,14 @@
     }
     body {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       padding: 2em;
       box-sizing: border-box;
     }
-    .centered {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    .container {
       width: 100%;
       max-width: 800px;
-    }
-    .inner {
-      text-align: center;
-      width: 100%;
     }
     .nav ul {
       list-style: none;
@@ -46,6 +38,7 @@
     }
     .hero-title, .section-title, .projects-list li, .footer p {
       margin: 1em 0;
+      text-align: center;
     }
     .projects-list {
       list-style: none;
@@ -56,74 +49,68 @@
       font-size: 0.8rem;
       color: #888;
       margin-top: 3em;
+      text-align: center;
     }
-    .left-align {
-      text-align: left;
-      margin: 0 auto 2em;
-      max-width: 600px;
+    .profile {
+      text-align: center;
+      margin: 2em 0;
     }
-    .left-align p {
+    .profile p {
       margin-bottom: 1em;
     }
-    .left-align strong {
+    .profile strong {
       display: block;
       margin-bottom: 0.2em;
     }
   </style>
 </head>
 <body>
-  <div class="centered">
+  <div class="container">
     <!-- ヘッダー -->
     <header class="header">
-      <div class="inner">
-        <nav class="nav">
-          <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="index2.html">研究活動</a></li>
-            <li><a href="index3.html">リンク</a></li>
-          </ul>
-        </nav>
-      </div>
+      <hr width="100%">
+      <nav class="nav">
+        <ul>
+          <li><a href="index1.html">自己紹介</a></li>
+          <li><a href="index2.html">研究活動</a></li>
+          <li><a href="index3.html">リンク</a></li>
+        </ul>
+      </nav>
+      <hr width="100%">
     </header>
 
     <!-- 自己紹介セクション -->
     <section class="hero">
-      <div class="inner">
-        <h2 class="hero-title">自己紹介</h2>
-      </div>
+      <h2 class="hero-title">自己紹介</h2>
+    </section>
+
+    <section class="profile">
+      <p><strong>名前</strong><br>A</p>
+      <p><strong>所属</strong><br>B</p>
+      <p><strong>研究分野</strong><br>写像の特異点論, 数理モデル</p>
+      <p><strong>興味</strong><br>トポロジーや特異点が関連した数学に興味があります。</p>
+      <p><strong>メールアドレス</strong><br>C</p>
     </section>
 
     <section class="section">
-      <div class="left-align">
-        <p><strong>名前</strong><br>A</p>
-        <p><strong>所属</strong><br>B</p>
-        <p><strong>研究分野</strong><br>写像の特異点論, 数理モデル</p>
-        <p><strong>興味</strong><br>トポロジーや特異点が関連した数学に興味があります。</p>
-        <p><strong>メールアドレス</strong><br>C</p>
-      </div>
+      <h3 class="section-title">職歴</h3>
+      <ul class="projects-list">
+        <li>2023,6--2024,3 RA</li>
+        <li>2024,4--2025,3 RA</li>
+      </ul>
 
-      <div class="inner">
-        <h3 class="section-title">職歴</h3>
-        <ul class="projects-list">
-          <li>2023,6--2024,3 RA</li>
-          <li>2024,4--2025,3 RA</li>
-        </ul>
+      <h3 class="section-title">TA</h3>
+      <ul class="projects-list">
+        <li>2023年度後期 幾何学II</li>
+        <li>2024年度後期 入門微分積分学I,II</li>
+      </ul>
 
-        <h3 class="section-title">TA</h3>
-        <ul class="projects-list">
-          <li>2023年度後期 幾何学II</li>
-          <li>2024年度後期 入門微分積分学I,II</li>
-        </ul>
-
-        <p><a href="index.html">戻る</a></p>
-      </div>
+      <p style="text-align:center;"><a href="index.html">戻る</a></p>
     </section>
 
     <!-- フッター -->
     <footer class="footer">
-      <div class="inner">
-        <p>&copy; 2025 Iのホームページ</p>
-      </div>
+      <p>&copy; 2025 Iのホームページ</p>
     </footer>
   </div>
 </body>
