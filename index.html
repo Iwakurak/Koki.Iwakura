@@ -13,49 +13,94 @@
     crossorigin="anonymous">
   <!-- カスタムスタイル -->
   <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #fff;
+      color: #000;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding-top: 50px;
+    }
+    .centered {
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+    }
+    .nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+    }
+    .nav a {
+      color: #00f;
+      text-decoration: none;
+    }
+    .hero-title, .section-title, .projects-list li, .footer p {
+      margin: 1em 0;
+    }
+    .projects-list {
+      list-style: none;
+      padding: 0;
+    }
+    .footer p {
+      font-size: 0.7rem;
+      color: #888;
+      margin-top: 5em;
+    }
+  </style>
 </head>
 <body>
-  <!-- 固定ヘッダー -->
-  <header class="header">
-    <div class="inner">
-      <h1 class="logo">Iのホームページ</h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="index1.html">自己紹介</a></li>
-          <li><a href="index2.html">研究活動</a></li>
-          <li><a href="index3.html">リンク</a></li>
+  <div class="centered">
+    <!-- ヒーロー的イントロ -->
+    <section class="hero">
+      <div class="inner">
+        <h2 class="hero-title">Iのホームページです。</h2>
+      </div>
+    </section>
+
+    <!-- ナビゲーション -->
+    <header class="header">
+      <div class="inner">
+        <nav class="nav">
+          <ul>
+            <li><a href="index1.html">自己紹介</a></li>
+            <li><a href="index2.html">研究活動</a></li>
+            <li><a href="index3.html">リンク</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- セミナー・集会リスト -->
+    <section id="events" class="section alt">
+      <div class="inner">
+        <h3 class="section-title">参加予定のセミナー・集会</h3>
+        <ul class="projects-list">
+          <li>特異点論と数理科学への応用 — 6/3–6/5, 山口</li>
+          <li>ブラジル学会 — 6/29–7/4, ブラジル</li>
+          <li>第61回 トポロジー新人セミナー — 8/20–8/23, 千葉</li>
+          <li>特異点論若手勉強会2025 — 11/4–11/5, 東京</li>
+          <li>特異点論研究会 — 12月, 京都</li>
         </ul>
-      </nav>
-    </div>
-  </header>
+      </div>
+    </section>
 
-  <!-- ヒーロー的イントロ -->
-  <section class="hero">
-    <div class="inner">
-      <h2 class="hero-title">Iのホームページです。</h2>
-    </div>
-  </section>
-
-  <!-- セミナー・集会リスト -->
-  <section id="events" class="section alt">
-    <div class="inner">
-      <h3 class="section-title">参加予定のセミナー・集会</h3>
-      <ul class="projects-list">
-        <li>特異点論と数理科学への応用 — 6/3–6/5, 山口</li>
-        <li>ブラジル学会 — 6/29–7/4, ブラジル</li>
-        <li>第61回 トポロジー新人セミナー — 8/20–8/23, 千葉</li>
-        <li>特異点論若手勉強会2025 — 11/4–11/5, 東京</li>
-        <li>特異点論研究会 — 12月, 京都</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- フッター -->
-  <footer class="footer">
-    <div class="inner">
-      <p>&copy; 2025 Iのホームページ</p>
-    </div>
-  </footer>
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="inner">
+        <p>&copy; 2025 Iのホームページ</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
 
