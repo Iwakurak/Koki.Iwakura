@@ -1,75 +1,99 @@
-/* 1. リセット＆ボックスモデル統一 */
+/* 1. リセット＆ボックスモデル */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 2. ページ全体の設定 */
+/* 2. ページ全体＆ヘッダー分余白確保 */
 body {
-  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", sans-serif;
-  background-color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
   color: #333;
+  padding-top: 65px; /* 固定ヘッダー分の余白 */
 }
 
-/* 3. 中央コンテナ（1000px固定幅） */
-div[align="center"] {
-  width: 1000px;
-  margin: 120px auto 40px; /* 上部に余白を空ける */
-  text-align: left;       /* 中のテキストは左寄せ */
+/* 3. コンテナ幅の制御 */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* 4. <hr> の見た目 */
-div[align="center"] hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  width: 1000px;
-  margin: 20px auto;
+/* 4. ヘッダー */
+.site-header {
+  background-color: #4a90e2;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
-
-/* 5. 上部ナビゲーションリンク */
-div[align="center"] > a {
-  display: inline-block;
-  margin: 0 15px;
-  color: #0066cc;
-  font-size: 14px;
-  line-height: 1.8;
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 1.8rem;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+}
+.site-nav li + li {
+  margin-left: 20px;
+}
+.site-nav a {
+  color: #fff;
   text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
 }
-div[align="center"] > a:hover {
+.site-nav a:hover {
   text-decoration: underline;
 }
 
-/* 6. メイン見出し */
-div[align="center"] h2 {
-  font-size: 24px;
-  color: #333;
-  font-weight: normal;
-  margin: 20px 0;
+/* 5. メインセクション */
+.intro {
   text-align: center;
+  margin: 40px 0;
 }
-
-/* 7. サブ見出し */
-div[align="center"] h3 {
-  font-size: 18px;
-  color: #333;
-  font-weight: normal;
-  margin: 20px 0 10px;
-}
-
-/* 8. イベントリスト */
-div[align="center"] li {
+.events-list {
   list-style: none;
-  font-size: 10pt;
-  margin: 6px 0;
-  color: #333;
+  margin-top: 20px;
+  padding-left: 0;
+}
+.events-list li {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 0.95rem;
 }
 
-/* 9. フッター的な著作権表記（もしあれば） */
-footer, div[align="center"] p.copyright {
+/* 6. フッター */
+.site-footer {
+  background-color: #222;
+  color: #bbb;
   text-align: center;
-  font-size: 12px;
-  color: #777;
+  padding: 20px 0;
   margin-top: 40px;
+}
+.site-footer p {
+  font-size: 0.9rem;
+}
+
+/* レスポンシブ */
+@media all and (max-width: 750px) {
+  .container {
+    width: 95%;
+  }
+  .site-header .container {
+    flex-direction: column;
+  }
 }
 
