@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>研究活動</title>
+  <title>自己紹介</title>
   <link rel="stylesheet" href="style.css">
   <style>
     html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       background-color: #fff;
       color: #000;
       font-family: 'Arial', sans-serif;
@@ -18,10 +19,11 @@
       flex-direction: column;
       align-items: center;
       padding: 2em;
+      box-sizing: border-box;
     }
     .container {
       width: 100%;
-      max-width: 900px;
+      max-width: 800px;
     }
     .nav ul {
       list-style: none;
@@ -34,34 +36,39 @@
       color: #00f;
       text-decoration: none;
     }
-    h4 {
+    .hero-title, .section-title, .projects-list li, .footer p {
+      margin: 1em 0;
       text-align: center;
-      margin-top: 2em;
     }
-    ul {
-      font-size: 10pt;
-      padding-left: 1.2em;
+    .projects-list {
       list-style: none;
-    }
-    li {
-      margin-bottom: 0.5em;
-    }
-    .footer {
+      padding: 0;
       text-align: center;
-      margin-top: 3em;
+    }
+    .footer p {
       font-size: 0.8rem;
       color: #888;
-    }
-    .back-link {
+      margin-top: 3em;
       text-align: center;
-      margin-top: 2em;
+    }
+    .profile {
+      text-align: center;
+      margin: 2em 0;
+    }
+    .profile p {
+      margin-bottom: 1em;
+    }
+    .profile strong {
+      display: block;
+      margin-bottom: 0.2em;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- ヘッダー -->
     <header class="header">
-      <hr>
+      <hr width="100%">
       <nav class="nav">
         <ul>
           <li><a href="index1.html">自己紹介</a></li>
@@ -69,7 +76,7 @@
           <li><a href="index3.html">リンク</a></li>
         </ul>
       </nav>
-      <hr>
+      <hr width="100%">
     </header>
 
     <h2 style="text-align: center;">研究活動</h2>
