@@ -1,49 +1,132 @@
 <!DOCTYPE html>
-<html>
-
-<meta name="google-site-verification" content="iazn4wa_MWoOd2NTZCey7JL8P7xa1tpaHa7GgHRkAQs" />
-  
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    岩倉康樹のホームページ
-  </title>
-  <link 
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link 
-    rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Iのホームページ</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- カスタムスタイル -->
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
-  
 <body>
-  
-<div align="center">
-<hr width="1000">
-<a href="index1.html">自己紹介</a>
-<a href="index2.html">研究活動</a>
-<a href="index3.html">リンク</a>
-  
-<hr width="1000"><br>
-<h2 style="font-family:Lucida Grande;">岩倉康樹のホームページです。</h2><br>
-  
-<hr width="1000">
-<h3>参加予定のセミナー・集会</h3>
-<li style="font-size: 10pt">
-   特異点論と数理科学への応用, 6/3--6/5, 山口. 
-</li>
-<li style="font-size: 10pt">
-    ブラジル, 6/29--7/4. 
-</li>
-<li style="font-size: 10pt">
-    第61回 トポロジー新人セミナー, 8/20--8/23, 千葉. 
-</li>
-<li style="font-size: 10pt">
-    特異点論若手勉強会2025, 11/4--11/5, 東京. 
-</li>
-<li style="font-size: 10pt">
-    特異点論, 12, 京都. 
-</li>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Iのホームページ</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index1.html">自己紹介</a></li>
+          <li><a href="index2.html">研究活動</a></li>
+          <li><a href="index3.html">リンク</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-</div>
+  <main class="container">
+    <section class="intro">
+      <h2>ようこそ！</h2>
+      <p>Iの個人サイトへお越しいただき、ありがとうございます。</p>
+    </section>
+
+    <section class="events">
+      <h2>参加予定のセミナー・集会</h2>
+      <ul class="events-list">
+        <li>特異点論と数理科学への応用 — 6/3–6/5, 山口</li>
+        <li>ブラジル学会 — 6/29–7/4, ブラジル</li>
+        <li>第61回 トポロジー新人セミナー — 8/20–8/23, 千葉</li>
+        <li>特異点論若手勉強会2025 — 11/4–11/5, 東京</li>
+        <li>特異点論研究会 — 12月, 京都</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Iのホームページ</p>
+    </div>
+  </footer>
 </body>
 </html>
+
+/* stylesheet.css */
+/* リセットと共通設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+.site-header {
+  background-color: #4a90e2;
+  color: #fff;
+}
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 1.8rem;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+}
+.site-nav li + li {
+  margin-left: 20px;
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* メインコンテンツ */
+.intro {
+  text-align: center;
+  margin: 40px 0;
+}
+.events ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.events-list li {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 0.95rem;
+}
+
+/* フッター */
+.site-footer {
+  background-color: #222;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.site-footer p {
+  font-size: 0.9rem;
+}
+
