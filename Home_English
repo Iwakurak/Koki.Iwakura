@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="iazn4wa_MWoOd2NTZCey7JL8P7xa1tpaHa7GgHRkAQs">
-  <title>岩倉康樹のホームページ</title>
+  <title>A's Homepage</title>
   <!-- Font Awesome -->
   <link 
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
     rel="stylesheet" 
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
     crossorigin="anonymous">
-  <!-- カスタムスタイル -->
+  <!-- Custom Style -->
   <link rel="stylesheet" href="style.css">
   <style>
     html, body {
@@ -60,43 +60,43 @@
 </head>
 <body>
   <div class="centered">
-    <!-- ヒーロー的イントロ -->
+    <!-- Hero Intro -->
     <section class="hero">
       <div class="inner">
-        <h2 class="hero-title">岩倉康樹のホームページです。</h2>
+        <h2 class="hero-title">This is A's homepage.</h2>
       </div>
     </section>
 
-    <!-- ナビゲーション -->
+    <!-- Navigation -->
     <header class="header">
       <div class="inner">
         <nav class="nav">
           <ul>
-            <li><a href="index1.html">自己紹介</a></li>
-            <li><a href="index2.html">研究活動</a></li>
-            <li><a href="index3.html">リンク</a></li>
+            <li><a href="index1.html">Profile</a></li>
+            <li><a href="index2.html">Research</a></li>
+            <li><a href="index3.html">Links</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- セミナー・集会リスト -->
+    <!-- Seminar / Conference List -->
     <section id="events" class="section alt">
       <div class="inner">
-        <h3 class="section-title">参加予定のセミナー・集会</h3>
+        <h3 class="section-title">Upcoming Seminars and Conferences</h3>
         <ul class="projects-list">
-          <li>ブラジルの集会 — 6/29–7/4, ブラジル</li>
-          <li>第61回 トポロジー新人セミナー — 8/20–8/23, 千葉</li>
-          <li>特異点論若手勉強会2025 — 11/4–11/5, 東京</li>
-          <li>特異点論の研究集会 — 12月, 京都</li>
+          <li>Conference in Brazil — June 29–July 4, Brazil</li>
+          <li>61st Topology Newcomers Seminar — August 20–23, Chiba</li>
+          <li>Young Researchers' Workshop on Singularity Theory 2025 — November 4–5, Tokyo</li>
+          <li>Research Meeting on Singularity Theory — December, Kyoto</li>
         </ul>
       </div>
     </section>
 
-    <!-- フッター -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="inner">
-        <p>&copy; 岩倉康樹のホームページ</p>
+        <p>&copy; A's Homepage</p>
       </div>
     </footer>
   </div>
