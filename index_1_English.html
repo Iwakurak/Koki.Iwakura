@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自己紹介</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #fff;
+      color: #000;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 100%;
+      max-width: 800px;
+    }
+    .nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+    }
+    .nav a {
+      color: #00f;
+      text-decoration: none;
+    }
+    .hero-title, .section-title, .projects-list li, .footer p {
+      margin: 1em 0;
+      text-align: center;
+    }
+    .projects-list {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 3em;
+      text-align: center;
+    }
+    .profile {
+      text-align: center;
+      margin: 2em 0;
+    }
+    .profile p {
+      margin-bottom: 1em;
+    }
+    .profile strong {
+      display: block;
+      margin-bottom: 0.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ヘッダー -->
+    <header class="header">
+      <hr width="100%">
+      <nav class="nav">
+        <ul>
+          <li><a href="index1.html">自己紹介</a></li>
+          <li><a href="index2.html">研究活動</a></li>
+          <li><a href="index3.html">リンク</a></li>
+        </ul>
+      </nav>
+      <hr width="100%">
+    </header>
+
+    <!-- 自己紹介セクション -->
+    <section class="hero">
+      <h2 class="hero-title">自己紹介</h2>
+    </section>
+
+    <section class="profile">
+      <p><strong>名前</strong><br>岩倉康樹(Koki Iwakura)</p>
+      <p><strong>所属</strong><br>九州大学 マス・フォア・イノベーション連係学府</p>
+      <p><strong>研究分野</strong><br>写像の特異点論, 数理モデル</p>
+      <p><strong>興味</strong><br>トポロジーや特異点が関連した数学に興味があります。</p>
+      <p><strong>メールアドレス</strong><br>iwakura.koki.0105(at)gmail.com, at=@</p>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title">職歴</h3>
+      <ul class="projects-list">
+        <li>2023,6--2024,3 RA</li>
+        <li>2024,4--2025,3 RA</li>
+      </ul>
+
+      <h3 class="section-title">TA</h3>
+      <ul class="projects-list">
+        <li>2023年度後期 幾何学II</li>
+        <li>2024年度後期 入門微分積分学I,II</li>
+      </ul>
+
+      <p style="text-align:center;"><a href="Home_English.html">戻る</a></p>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <p>&copy; 岩倉康樹のホームページ</p>
+    </footer>
+  </div>
+</body>
+</html>
