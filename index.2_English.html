@@ -3,146 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research Activities</title>
+  <title>Research Activities | Koki Iwakura</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #fff;
-      color: #000;
-      font-family: 'Arial', sans-serif;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2em;
-      box-sizing: border-box;
-    }
-    .container {
-      width: 100%;
-      max-width: 800px;
-    }
-    .nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 1em;
-    }
-    .nav a {
-      color: #00f;
-      text-decoration: none;
-    }
-    .hero-title, .section-title, .projects-list li, .footer p {
-      margin: 1em 0;
-      text-align: center;
-    }
-    .projects-list {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
-    .footer p {
-      font-size: 0.8rem;
-      color: #888;
-      margin-top: 3em;
-      text-align: center;
-    }
-    .profile {
-      text-align: center;
-      margin: 2em 0;
-    }
-    .profile p {
-      margin-bottom: 1em;
-    }
-    .profile strong {
-      display: block;
-      margin-bottom: 0.2em;
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header class="header">
-      <hr width="100%">
-      <nav class="nav">
-        <ul>
-          <li><a href="index.1_English.html">Profile</a></li>
-          <li><a href="index.2_English.html">Research</a></li>
-          <li><a href="index.3_English.html">Links</a></li>
+  <header class="header">
+    <div class="nav-container">
+      <a href="Home_English.html" class="nav-logo">Koki Iwakura</a>
+      <ul class="nav-menu">
+        <li><a href="index.1_English.html">Profile</a></li>
+        <li><a href="index.2_English.html" class="active">Research</a></li>
+        <li><a href="index.3_English.html">Links</a></li>
+        <li><a href="index2.html" class="lang-switch">日本語</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Research Activities</h1>
+      <p>Publications, Preprints & Presentations</p>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title">Published Papers</h3>
+      <div class="content-card">
+        <ul class="styled-list">
+          <li><b>1. K. Iwakura,</b> <i>Non-singular extensions of circle-valued Morse functions</i>.</li>
         </ul>
-      </nav>
-      <hr width="100%">
-    </header>
+      </div>
+    </section>
 
-    <h2 style="text-align: center;">Research Activities</h2>
+    <section class="section">
+      <h3 class="section-title">Preprints / Manuscripts <a href="https://arxiv.org/search/math?query=K.+Iwakura&searchtype=author&abstracts=show&order=-announced_date_first&size=50" style="font-size: 1rem;">(ArXiv URL)</a></h3>
+      <div class="content-card">
+        <ul class="styled-list">
+          <li><b>1. K. Iwakura,</b> <i>Non-singular extensions of horizontal stable fold maps from surfaces to the plane</i> (2024, Oct), arXiv:2410.22693 [math.GT].</li>
+        </ul>
+      </div>
+    </section>
 
-    <h4>Published Papers</h4>
-    <ul>
-      <li><b>1. <font size="2.3">K. Iwakura,</b> <i>Non-singular extensions of circle-valued Morse functions</i>.</font></li>
-    </ul>
+    <section class="section">
+      <h3 class="section-title">Proceedings, etc.</h3>
+      <div class="content-card">
+        <ul class="styled-list">
+          <li><b>1. K. Iwakura,</b> <i>Non-singular extensions of circle-valued Morse functions</i>, Hokkaido University Mathematical Reports Vol. 186, 20th Young Mathematicians’ Conference: Intersection of Mathematics, pp.405--412. <a href="https://eprints.lib.hokudai.ac.jp/dspace/handle/2115/91467">(URL)</a></li>
+          <li><b>2. K. Iwakura,</b> <i>Non-singular extensions of circle-valued Morse functions</i>, Mathematics of Knot VI Abstract. <a href="http://www.math.twcu.ac.jp/~mathsciknot6/proceedings.html">(URL)</a></li>
+          <li><b>3. K. Iwakura,</b> <i>Non-singular extensions of circle-valued Morse functions</i>, RIMS Kôkyûroku No. 2281, pp.144--152. <a href="https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2281.html">(URL)</a></li>
+        </ul>
+      </div>
+    </section>
 
-    <h4>Preprints / Manuscripts <a href="https://arxiv.org/search/math?query=K.+Iwakura&searchtype=author&abstracts=show&order=-announced_date_first&size=50">(URL)</a></h4>
-    <ul>
-      <li><b>1. <font size="2.3">K. Iwakura,</b> <i>Non-singular extensions of horizontal stable fold maps from surfaces to the plane</i> (2024, Oct), arXiv:2410.22693 [math.GT].</font></li>
-    </ul>
+    <section class="section">
+      <h3 class="section-title">Presentations (Mathematics)</h3>
+      <div class="content-card">
+        <ul class="styled-list">
+          <li><b>1.</b> <i>Singularity theory on manifolds with boundary</i>, 59th Topology Freshman Seminar, Aug 17–20, 2023 (oral).</li>
+          <li><b>2.</b> <i>Non-singular extensions of circle-valued Morse functions</i>, 149th Kyushu Branch Meeting of the Mathematical Society of Japan, Oct 29, 2023 (oral).</li>
+          <li><b>3.</b> <i>Non-singular extensions of circle-valued Morse functions</i>, Expansion of Singularity Theory, Nov 27–29, 2023 (oral).</li>
+          <li><b>4.</b> <i>Non-singular extensions of circle-valued Morse functions</i>, Mathematics of Knot VI, Dec 23–26, 2023 (oral).</li>
+          <li><b>5.</b> <i>Non-singular extensions of circle-valued Morse functions</i>, 20th Young Mathematicians’ Conference: Intersection of Mathematics, Mar 4–8, 2024 (oral).</li>
+          <li><b>6.</b> <i>Non-singular extensions of stable fold maps from surfaces into the plane</i>, Singularity Theory and Its Surroundings, Jun 20–22, 2024 (oral).</li>
+          <li><b>7.</b> <i>Non-singular extensions of stable fold maps from surfaces into the plane</i>, 18th International Workshop on Real and Complex Singularities, Jul 21–26, 2024 (poster, international).</li>
+          <li><b>8.</b> <i>Non-singular extensions of stable fold maps</i>, 60th Topology Freshman Seminar, Aug 28–31, 2024 (oral).</li>
+          <li><b>9.</b> <i>Non-singular extensions of horizontal stable fold maps</i>, Japanese-Australian Workshop on Real and Complex Singularities, Nov 4–7, 2024 (poster, international).</li>
+          <li><b>10.</b> <i>Non-singular extensions of circle-valued Morse functions</i>, Topology Friday Seminar, Jan 14, 2025 (oral, invited).</li>
+          <li><b>11.</b> <i>Non-singular extensions of horizontal stable fold maps</i>, Geometry and Singularities 2025, Mar 3–4, 2025 (oral, invited).</li>
+          <li><b>12.</b> <i>Non-singular extensions of horizontal stable fold maps</i>, Annual Meeting of the Mathematical Society of Japan 2025, Mar 18–21, 2025 (oral).</li>
+          <li><b>13.</b> <i>Topology of boundary special generic maps</i>, 8th International Workshop on Singularities in Geometry and Applications - València VIII, Jun 29–Jul 4, 2025 (oral, international).</li>
+        </ul>
+      </div>
+    </section>
 
-    <h4>Proceedings, etc.</h4>
-    <ul>
-      <li><b>1. <font size="2.3">K. Iwakura,</b> <i>Non-singular extensions of circle-valued Morse functions</i>, Hokkaido University Mathematical Reports Vol. 186, 20th Young Mathematicians’ Conference: Intersection of Mathematics, pp.405--412. <a href="https://eprints.lib.hokudai.ac.jp/dspace/handle/2115/91467">(URL)</a></font></li>
-      <li><b>2. <font size="2.3">K. Iwakura,</b> <i>Non-singular extensions of circle-valued Morse functions</i>, Mathematics of Knot VI Abstract. <a href="http://www.math.twcu.ac.jp/~mathsciknot6/proceedings.html">(URL)</a></font></li>
-      <li><b>3. <font size="2.3">K. Iwakura,</b> <i>Non-singular extensions of circle-valued Morse functions</i>, RIMS Kôkyûroku No. 2281, pp.144--152. <a href="https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2281.html">(URL)</a></font></li>
-    </ul>
+    <section class="section">
+      <h3 class="section-title">Presentations (Biology)</h3>
+      <div class="content-card">
+        <ul class="styled-list">
+          <li><b>1.</b> <i>The Mathematical Model of Plant-to-Plant Communications and Its Applications to Evolutionary Research</i>, Plant Molecular Phenology and Climate Feedbacks Mediated by BVOCs, Oct 28–31, 2024 (poster, international) (collaboration with Prof. Kudoh and Prof. Satake, Kyushu Univ.).</li>
+          <li><b>2.</b> <i>Mathematical Model of Plant-to-Plant Communication and its Applications to Evolutionary Research</i>, 2nd Plant-Climate Feedback Young Researchers’ Meeting, Dec 11–13, 2024 (oral) (collaboration with Kudoh & Satake, Kyushu Univ.).</li>
+          <li><b>3.</b> <i>Mathematical Modeling of Plant-to-Plant Communication</i>, Interdisciplinary Exchange Meeting for Young Mathematicians 2025, Mar 16–17, 2025 (poster, invited) (collaboration with Kudoh & Satake, Kyushu Univ.).</li>
+        </ul>
+      </div>
+    </section>
 
-    <h4>Presentations (Mathematics)</h4>
-    <ul>
-      <li><b>1.</b> <i><font size="2.3">Singularity theory on manifolds with boundary</i>, 59th Topology Freshman Seminar, Aug 17–20, 2023 (oral).</font></li>
-      <li><b>2.</b> <i><font size="2.3">Non-singular extensions of circle-valued Morse functions</i>, 149th Kyushu Branch Meeting of the Mathematical Society of Japan, Oct 29, 2023 (oral).</font></li>
-      <li><b>3.</b> <i><font size="2.3">Non-singular extensions of circle-valued Morse functions</i>, Expansion of Singularity Theory, Nov 27–29, 2023 (oral).</font></li>
-      <li><b>4.</b> <i><font size="2.3">Non-singular extensions of circle-valued Morse functions</i>, Mathematics of Knot VI, Dec 23–26, 2023 (oral).</font></li>
-      <li><b>5.</b> <i><font size="2.3">Non-singular extensions of circle-valued Morse functions</i>, 20th Young Mathematicians’ Conference: Intersection of Mathematics, Mar 4–8, 2024 (oral).</font></li>
-      <li><b>6.</b> <i><font size="2.3">Non-singular extensions of stable fold maps from surfaces into the plane</i>, Singularity Theory and Its Surroundings, Jun 20–22, 2024 (oral).</font></li>
-      <li><b>7.</b> <i><font size="2.3">Non-singular extensions of stable fold maps from surfaces into the plane</i>, 18th International Workshop on Real and Complex Singularities, Jul 21–26, 2024 (poster, international).</font></li>
-      <li><b>8.</b> <i><font size="2.3">Non-singular extensions of stable fold maps</i>, 60th Topology Freshman Seminar, Aug 28–31, 2024 (oral).</font></li>
-      <li><b>9.</b> <i><font size="2.3">Non-singular extensions of horizontal stable fold maps</i>, Japanese-Australian Workshop on Real and Complex Singularities, Nov 4–7, 2024 (poster, international).</font></li>
-      <li><b>10.</b> <i><font size="2.3">Non-singular extensions of circle-valued Morse functions</i>, Topology Friday Seminar, Jan 14, 2025 (oral, invited).</font></li>
-      <li><b>11.</b> <i><font size="2.3">Non-singular extensions of horizontal stable fold maps</i>, Geometry and Singularities 2025, Mar 3–4, 2025 (oral, invited).</font></li>
-      <li><b>12.</b> <i><font size="2.3">Non-singular extensions of horizontal stable fold maps</i>, Annual Meeting of the Mathematical Society of Japan 2025, Mar 18–21, 2025 (oral).</font></li>
-      <li><b>13.</b> <i><font size="2.3">Topology of boundary special generic maps</i>, 8th International Workshop on Singularities in Geometry and Applications - València VIII, Jun 29–Jul 4, 2025 (oral, international).</font></li>
-    </ul>
+    <section class="section">
+      <h3 class="section-title">Awards</h3>
+      <div class="content-card">
+        <ul class="styled-list">
+          <li><i>9th Kyushu Young Mathematicians Presentation Award</i>, Feb 17, 2024. <a href="https://www2.math.kyushu-u.ac.jp/~hiroshima/young.html">(URL)</a></li>
+          <li><i>PCF2024 Best Poster Award</i>, Oct 30, 2024. <a href="https://www.plant-climate-feedback.com/international-conference-2024">(URL)</a></li>
+          <li><i>2nd Plant-Climate Feedback Young Researchers’ Excellent Oral Presentation Award</i>, Dec 13, 2024. <a href="https://www.plant-climate-feedback.com/conference/2024-1219">(URL)</a></li>
+          <li><i>Kyushu University Spring Graduation Student Award</i>, Mar 25, 2025.</li>
+        </ul>
+      </div>
+    </section>
 
-    <h4>Presentations (Biology)</h4>
-    <ul>
-      <li><b>1.</b> <i><font size="2.3">The Mathematical Model of Plant-to-Plant Communications and Its Applications to Evolutionary Research</i>, Plant Molecular Phenology and Climate Feedbacks Mediated by BVOCs, Oct 28–31, 2024 (poster, international) (collaboration with Prof. Kudoh and Prof. Satake, Kyushu Univ.).</font></li>
-      <li><b>2.</b> <i><font size="2.3">Mathematical Model of Plant-to-Plant Communication and its Applications to Evolutionary Research</i>, 2nd Plant-Climate Feedback Young Researchers’ Meeting, Dec 11–13, 2024 (oral) (collaboration with Kudoh & Satake, Kyushu Univ.).</font></li>
-      <li><b>3.</b> <i><font size="2.3">Mathematical Modeling of Plant-to-Plant Communication</i>, Interdisciplinary Exchange Meeting for Young Mathematicians 2025, Mar 16–17, 2025 (poster, invited) (collaboration with Kudoh & Satake, Kyushu Univ.).</font></li>
-    </ul>
+    <section class="section">
+      <h3 class="section-title">Other Conferences / Schools</h3>
+      <div class="content-card">
+        <ul class="styled-list">
+          <li><i>SLMath Summer Graduate School, h-principle</i>. <a href="https://www.slmath.org/summer-schools/1074#overview_summer_graduate_school">(URL)</a></li>
+          <li><i>Topology Freshman Seminar</i>. <a href="https://sites.google.com/view/topologyfs2024/">(URL)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-    <h4>Awards</h4>
-    <ul>
-      <li><i><font size="2.3">9th Kyushu Young Mathematicians Presentation Award</i>, Feb 17, 2024. <a href="https://www2.math.kyushu-u.ac.jp/~hiroshima/young.html">(URL)</a></font></li>
-      <li><i><font size="2.3">PCF2024 Best Poster Award</i>, Oct 30, 2024. <a href="https://www.plant-climate-feedback.com/international-conference-2024">(URL)</a></font></li>
-      <li><i><font size="2.3">2nd Plant-Climate Feedback Young Researchers’ Excellent Oral Presentation Award</i>, Dec 13, 2024. <a href="https://www.plant-climate-feedback.com/conference/2024-1219">(URL)</a></font></li>
-      <li><i><font size="2.3">Kyushu University Spring Graduation Student Award</i>, Mar 25, 2025.</font></li>
-    </ul>
-
-    <h4>Other Conferences / Schools</h4>
-    <ul>
-      <li><i><font size="2.3">SLMath Summer Graduate School, h-principle</i>. <a href="https://www.slmath.org/summer-schools/1074#overview_summer_graduate_school">(URL)</a></font></li>
-      <li><i><font size="2.3">Topology Freshman Seminar</i>. <a href="https://sites.google.com/view/topologyfs2024/">(URL)</a></font></li>
-    </ul>
-
-    <p style="text-align:center;"><a href="Home_English.html">Back</a></p>
-
-    <footer class="footer">
-      <p>&copy; Koki Iwakura’s Homepage</p>
-    </footer>
-  </div>
+  <footer class="footer">
+    <p>&copy; Koki Iwakura’s Homepage</p>
+  </footer>
 </body>
 </html>
-
-

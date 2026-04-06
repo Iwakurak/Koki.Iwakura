@@ -5,99 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="iazn4wa_MWoOd2NTZCey7JL8P7xa1tpaHa7GgHRkAQs">
   <title>岩倉康樹のホームページ</title>
-  <!-- Font Awesome -->
-  <link 
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
-    crossorigin="anonymous">
-  <!-- カスタムスタイル -->
   <link rel="stylesheet" href="style.css">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #fff;
-      color: #000;
-      font-family: 'Arial', sans-serif;
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      padding-top: 50px;
-    }
-    .centered {
-      width: 100%;
-      max-width: 800px;
-      text-align: center;
-    }
-    .nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 1em;
-    }
-    .nav a {
-      color: #00f;
-      text-decoration: none;
-    }
-    .hero-title, .section-title, .projects-list li, .footer p {
-      margin: 1em 0;
-    }
-    .projects-list {
-      list-style: none;
-      padding: 0;
-    }
-    .footer p {
-      font-size: 0.7rem;
-      color: #888;
-      margin-top: 5em;
-    }
-  </style>
 </head>
 <body>
-  <div class="centered">
-    <!-- ヒーロー的イントロ -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Koki Iwakura</a>
+      <ul class="nav-menu">
+        <li><a href="index1.html">自己紹介</a></li>
+        <li><a href="index2.html">研究活動</a></li>
+        <li><a href="index3.html">リンク</a></li>
+        <li><a href="Home_English.html" class="lang-switch">English</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main-content">
     <section class="hero">
-      <div class="inner">
-        <h2 class="hero-title">岩倉康樹のホームページです。</h2>
-      </div>
+      <h1>岩倉康樹</h1>
+      <p>Koki Iwakura's Homepage</p>
     </section>
 
-    <!-- ナビゲーション -->
-    <header class="header">
-      <div class="inner">
-        <nav class="nav">
-          <ul>
-            <li><a href="index1.html">自己紹介</a></li>
-            <li><a href="index2.html">研究活動</a></li>
-            <li><a href="index3.html">リンク</a></li>
-            <li><a href="Home_English.html">English version</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="content-card">
+      <h3 class="section-title">参加予定および最近参加したセミナー・集会</h3>
+      <ul class="styled-list">
+        <li>Stay at Kansas state University ー 1/10-3/29</li>
+      </ul>
+    </div>
+  </main>
 
-    <!-- セミナー・集会リスト -->
-    <section id="events" class="section alt">
-      <div class="inner">
-        <h3 class="section-title">参加予定および最近参加したセミナー・集会</h3>
-        <ul class="projects-list">
-          <li>Stay at Kansas state University ー　1/10-3/29</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- フッター -->
-    <footer class="footer">
-      <div class="inner">
-        <p>&copy; 岩倉康樹のホームページ</p>
-      </div>
-    </footer>
-  </div>
+  <footer class="footer">
+    <p>&copy; 岩倉康樹のホームページ</p>
+  </footer>
 </body>
 </html>
-

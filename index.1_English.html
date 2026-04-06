@@ -3,116 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile</title>
+  <title>Profile | Koki Iwakura</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #fff;
-      color: #000;
-      font-family: 'Arial', sans-serif;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2em;
-      box-sizing: border-box;
-    }
-    .container {
-      width: 100%;
-      max-width: 800px;
-    }
-    .nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 1em;
-    }
-    .nav a {
-      color: #00f;
-      text-decoration: none;
-    }
-    .hero-title, .section-title, .projects-list li, .footer p {
-      margin: 1em 0;
-      text-align: center;
-    }
-    .projects-list {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
-    .footer p {
-      font-size: 0.8rem;
-      color: #888;
-      margin-top: 3em;
-      text-align: center;
-    }
-    .profile {
-      text-align: center;
-      margin: 2em 0;
-    }
-    .profile p {
-      margin-bottom: 1em;
-    }
-    .profile strong {
-      display: block;
-      margin-bottom: 0.2em;
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header class="header">
-      <hr width="100%">
-      <nav class="nav">
-        <ul>
-          <li><a href="index.1_English.html">Profile</a></li>
-          <li><a href="index.2_English.html">Research</a></li>
-          <li><a href="index.3_English.html">Links</a></li>
-        </ul>
-      </nav>
-      <hr width="100%">
-    </header>
+  <header class="header">
+    <div class="nav-container">
+      <a href="Home_English.html" class="nav-logo">Koki Iwakura</a>
+      <ul class="nav-menu">
+        <li><a href="index.1_English.html" class="active">Profile</a></li>
+        <li><a href="index.2_English.html">Research</a></li>
+        <li><a href="index.3_English.html">Links</a></li>
+        <li><a href="index1.html" class="lang-switch">日本語</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <!-- Profile Section -->
+  <main class="main-content">
     <section class="hero">
-      <h2 class="hero-title">Profile</h2>
+      <h1>Profile</h1>
+      <p>About Me & Research Interests</p>
     </section>
 
-    <section class="profile">
-      <p><strong>Name</strong><br>Koki Iwakura</p>
-      <p><strong>Affiliation</strong><br>Graduate School of Mathematics for Innovation, Kyushu University</p>
-      <p><strong>Research Interests</strong><br>Singularity theory of smooth maps, Mathematical modeling</p>
-      <p><strong>Topics of Interest</strong><br>I am interested in mathematics related to topology and singularities.</p>
-      <p><strong>Email</strong><br>iwakura.koki.0105(at)gmail.com (replace "(at)" with "@")</p>
+    <section class="section">
+      <div class="content-card">
+        <div class="profile-details">
+          <div class="profile-item">
+            <span class="profile-item-label">Name</span>
+            <span class="profile-item-value">Koki Iwakura</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-item-label">Affiliation</span>
+            <span class="profile-item-value">Graduate School of Mathematics for Innovation, Kyushu University</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-item-label">Research Interests</span>
+            <span class="profile-item-value">Singularity theory of smooth maps, Mathematical modeling</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-item-label">Topics of Interest</span>
+            <span class="profile-item-value">I am interested in mathematics related to topology and singularities.</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-item-label">Email</span>
+            <span class="profile-item-value">iwakura.koki.0105(at)gmail.com (replace "(at)" with "@")</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section">
       <h3 class="section-title">Work Experience</h3>
-      <ul class="projects-list">
-        <li>Jun 2023 – Mar 2024: Research Assistant (RA)</li>
-        <li>Apr 2024 – Mar 2025: Research Assistant (RA)</li>
-      </ul>
-
-      <h3 class="section-title">Teaching Assistant (TA)</h3>
-      <ul class="projects-list">
-        <li>Geometry II (Fall 2023)</li>
-        <li>Introductory Calculus I & II (Fall 2024)</li>
-      </ul>
-
-      <p style="text-align:center;"><a href="Home_English.html">Back</a></p>
+      <div class="content-card">
+        <ul class="styled-list">
+          <li>Jun 2023 – Mar 2024: Research Assistant (RA)</li>
+          <li>Apr 2024 – Mar 2025: Research Assistant (RA)</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; Koki Iwakura's Homepage</p>
-    </footer>
-  </div>
+    <section class="section">
+      <h3 class="section-title">Teaching Assistant (TA)</h3>
+      <div class="content-card">
+        <ul class="styled-list">
+          <li>Geometry II (Fall 2023)</li>
+          <li>Introductory Calculus I & II (Fall 2024)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; Koki Iwakura's Homepage</p>
+  </footer>
 </body>
 </html>
-
