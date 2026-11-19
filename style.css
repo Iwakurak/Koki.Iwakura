@@ -164,34 +164,27 @@ body {
 
 /* Profile / Content Blocks */
 .content-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
-  padding: 2rem;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.content-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  overflow-wrap: anywhere;
 }
 
 /* Lists */
 .styled-list {
-  list-style: none;
+  list-style: disc outside;
+  padding-inline-start: 1.75rem;
+}
+
+ol.styled-list {
+  list-style-type: decimal;
 }
 
 .styled-list li {
-  padding: 1rem;
-  border-bottom: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  display: list-item;
+  padding-inline-start: 0.25rem;
+  margin-bottom: 0.85rem;
 }
 
 .styled-list li:last-child {
-  border-bottom: none;
+  margin-bottom: 0;
 }
 
 .styled-list b {
@@ -256,6 +249,10 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .main-content {
+    padding: 2rem 1rem;
+  }
+
   .nav-container {
     flex-direction: column;
     gap: 1rem;
