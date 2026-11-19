@@ -4,105 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="iazn4wa_MWoOd2NTZCey7JL8P7xa1tpaHa7GgHRkAQs">
-  <meta name="description" content="九州大学の岩倉康樹のホームページ。写像の特異点論、境界付き多様体、非特異拡張問題に関する研究、論文、発表と連絡先を紹介しています。">
   <title>岩倉康樹のホームページ</title>
   <link rel="stylesheet" href="style.css">
-  <script src="homepage.js" defer></script>
 </head>
-<body class="homepage">
+<body>
   <header class="header">
-    <nav class="nav-container" aria-label="メインナビゲーション">
-      <a href="index.html" class="nav-logo" aria-current="page">Koki Iwakura</a>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Koki Iwakura</a>
       <ul class="nav-menu">
         <li><a href="index1.html">自己紹介</a></li>
         <li><a href="index2.html">研究活動</a></li>
         <li><a href="index3.html">リンク</a></li>
-        <li><a href="Home_English.html" class="lang-switch" lang="en" hreflang="en">English</a></li>
+        <li><a href="Home_English.html" class="lang-switch">English</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
   <main class="main-content">
-    <section class="home-hero" id="research-intro" aria-labelledby="researcher-name">
-      <div class="hero-copy">
-        <h1 id="researcher-name">岩倉 康樹</h1>
-        <p class="other-name" lang="en">Koki Iwakura</p>
-        <p class="research-summary">写像の特異点論を研究しています。特に、境界上の写像を、特異点のない写像として多様体全体に拡張できる条件を調べています。</p>
-        <p class="home-affiliation">九州大学大学院 マス・フォア・イノベーション連係学府 博士後期課程<br>日本学術振興会 特別研究員（DC2）</p>
-        <nav class="home-quicklinks" aria-label="このページと経歴へのリンク">
-          <a href="#recent-papers">論文</a>
-          <a href="index1.html">経歴</a>
-          <a href="#contact">連絡先</a>
-        </nav>
-      </div>
-      <div class="hero-photo">
-        <img src="images/paper-loop.webp" width="1080" height="720" fetchpriority="high"
-             alt="淡い光が当たる緑の台の上で、白い紙の帯がひねられて輪を描く。">
-      </div>
+    <section class="hero">
+      <h1>岩倉康樹のホームページです</h1>
+      <p>Koki Iwakura's Homepage</p>
     </section>
 
-    <div class="home-sections">
-      <section aria-labelledby="recent-papers">
-        <div class="home-section-heading">
-          <h2 id="recent-papers">主な論文・プレプリント</h2>
-          <a class="section-more" href="index2.html">業績一覧</a>
-        </div>
-        <ul class="paper-highlights">
-          <li>
-            <a class="paper-title" lang="en" href="https://arxiv.org/abs/2609.14403v1">Gluing ∂-Morin maps on manifolds with boundary and its applications</a>
-            <p class="paper-meta">arXiv:2609.14403v1 · 投稿準備中</p>
-          </li>
-          <li>
-            <a class="paper-title" lang="en" href="https://arxiv.org/abs/2604.26249">On submersions with definite folds on manifolds with boundary into Euclidean spaces</a>
-            <p class="paper-meta">arXiv:2604.26249 · 投稿中</p>
-          </li>
-          <li>
-            <a class="paper-title" lang="en" href="https://www.sciencedirect.com/science/article/abs/pii/S0166864125004833">Non-singular extensions of horizontal stable fold maps from surfaces to the plane</a>
-            <p class="paper-meta">Topology and its Applications 378 (2026), 109685</p>
-          </li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="seminars">
-        <div class="home-section-heading">
-          <h2 id="seminars">参加予定・最近の集会</h2>
-        </div>
-        <ul class="meeting-list">
-          <li>
-            可微分写像の特異点論とその応用
-            <p class="paper-meta"><span class="meeting-date"><time datetime="12-01">12月1日</time>–<time datetime="12-04">4日</time></span> 京都・聴講</p>
-          </li>
-          <li>
-            4次元トポロジー
-            <p class="paper-meta"><span class="meeting-date"><time datetime="11-06">11月6日</time>–<time datetime="11-07">7日</time></span> 東京・聴講</p>
-          </li>
-          <li>
-            結び目の数理
-            <p class="paper-meta">東京・聴講</p>
-          </li>
-        </ul>
-      </section>
+    <div class="content-card">
+      <h2 class="section-title">参加予定および最近参加したセミナー・集会</h2>
+      <ul class="styled-list">
+        <li>4次元トポロジー, 11/6-11/7, 東京, 聴講.</li>
+        <li>可微分写像の特異点論とその応用, 12/1-12/4, 京都, 聴講.</li>
+        <li>結び目の数理, 東京, 聴講.</li>
+      </ul>
     </div>
-
-    <section class="home-contact" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">連絡先</h2>
-      <div class="email-group">
-        <div class="contact-email">
-          <span id="email-address">iwakura.koki.0105(at)gmail.com</span>
-          <button class="copy-email" type="button" data-copy-email data-copy-success="コピーしました。" data-copy-error="コピーできませんでした。アドレスを選択してコピーしてください。" hidden>コピー</button>
-        </div>
-        <p class="copy-status" role="status" aria-live="polite"></p>
-      </div>
-      <nav class="home-quicklinks" aria-label="外部プロフィール">
-        <a href="https://researchmap.jp/iwakurakoki">Researchmap</a>
-        <a href="https://arxiv.org/search/math?query=K.+Iwakura&amp;searchtype=author&amp;abstracts=show&amp;order=-announced_date_first&amp;size=50">arXiv</a>
-      </nav>
-    </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; Koki Iwakura</p>
-    <p>最終更新 <time datetime="2026-11-20">2026年11月20日</time></p>
+    <p>&copy; 岩倉康樹のホームページ / Koki Iwakura</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem;">最終更新日 (Last updated) : <time datetime="2026-11-20">2026年11月20日</time></p>
   </footer>
 </body>
 </html>
