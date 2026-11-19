@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="iazn4wa_MWoOd2NTZCey7JL8P7xa1tpaHa7GgHRkAQs">
+  <meta name="description" content="九州大学の岩倉康樹のホームページ。写像の特異点論、境界付き多様体、非特異拡張問題に関する研究、論文、発表と連絡先を紹介しています。">
   <title>岩倉康樹のホームページ</title>
   <link rel="stylesheet" href="style.css">
+  <script src="homepage.js" defer></script>
 </head>
-<body>
+<body class="homepage">
   <header class="header">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">Koki Iwakura</a>
@@ -26,13 +28,58 @@
       <p>Koki Iwakura's Homepage</p>
     </section>
 
-    <div class="content-card">
-      <h2 class="section-title">参加予定および最近参加したセミナー・集会</h2>
-      <ul class="styled-list">
-        <li>4次元トポロジー, 11/6-11/7, 東京, 聴講.</li>
-        <li>可微分写像の特異点論とその応用, 12/1-12/4, 京都, 聴講.</li>
-        <li>結び目の数理, 東京, 聴講.</li>
+    <section class="section home-intro" aria-labelledby="research-intro">
+      <h2 class="section-title" id="research-intro">研究について</h2>
+      <p class="home-affiliation">九州大学大学院 マス・フォア・イノベーション連係学府 博士後期課程<br>日本学術振興会 特別研究員（DC2）</p>
+      <p>写像の特異点論を研究しています。特に、境界付き多様体上の写像や、与えられた写像を特異点のない写像へ拡張する問題に関心があります。</p>
+      <nav class="home-quicklinks" aria-label="研究とプロフィールへのリンク">
+        <a href="index2.html#publications">論文・研究活動</a>
+        <a href="index1.html">経歴・プロフィール</a>
+        <a href="#contact">連絡先</a>
+      </nav>
+    </section>
+
+    <section class="section" aria-labelledby="recent-papers">
+      <h2 class="section-title" id="recent-papers">論文・プレプリント</h2>
+      <ul class="paper-highlights">
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2609.14403v1">Gluing ∂-Morin maps on manifolds with boundary and its applications</a>
+          <p class="paper-meta">arXiv:2609.14403v1 · 投稿準備中</p>
+        </li>
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2604.26249">On submersions with definite folds on manifolds with boundary into Euclidean spaces</a>
+          <p class="paper-meta">arXiv:2604.26249 · 投稿中</p>
+        </li>
+        <li>
+          <a class="paper-title" href="https://www.sciencedirect.com/science/article/abs/pii/S0166864125004833">Non-singular extensions of horizontal stable fold maps from surfaces to the plane</a>
+          <p class="paper-meta">Topology and its Application 378 (2026), Paper No. 109685</p>
+        </li>
       </ul>
+      <p class="home-more"><a href="index2.html">すべての論文・発表を見る</a></p>
+    </section>
+
+    <div class="home-bottom">
+      <section class="section" aria-labelledby="seminars">
+        <h2 class="section-title" id="seminars">参加予定・最近の集会</h2>
+        <ul class="styled-list">
+          <li>4次元トポロジー, 11/6-11/7, 東京, 聴講.</li>
+          <li>可微分写像の特異点論とその応用, 12/1-12/4, 京都, 聴講.</li>
+          <li>結び目の数理, 東京, 聴講.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title">連絡先・外部プロフィール</h2>
+        <div class="contact-email">
+          <span id="email-address">iwakura.koki.0105(at)gmail.com</span>
+          <button class="copy-email" type="button" data-copy-email data-copy-success="コピーしました。" data-copy-error="コピーできませんでした。アドレスを選択してコピーしてください。" hidden>コピー</button>
+        </div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+        <nav class="home-quicklinks" aria-label="外部プロフィール">
+          <a href="https://researchmap.jp/iwakurakoki">Researchmap</a>
+          <a href="https://arxiv.org/search/math?query=K.+Iwakura&amp;searchtype=author&amp;abstracts=show&amp;order=-announced_date_first&amp;size=50">arXiv</a>
+        </nav>
+      </section>
     </div>
   </main>
 

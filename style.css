@@ -216,6 +216,114 @@ ol.styled-list {
   margin: 0;
 }
 
+.home-intro p {
+  margin: 0 0 0.85rem;
+}
+
+.home-intro .home-affiliation {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.home-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.home-quicklinks a,
+.home-more a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.paper-highlights {
+  margin: 0;
+  padding-inline-start: 1.6rem;
+  list-style: disc outside;
+}
+
+.paper-highlights li {
+  margin-bottom: 1.15rem;
+  overflow-wrap: anywhere;
+}
+
+.paper-highlights li:last-child {
+  margin-bottom: 0;
+}
+
+.paper-title {
+  font-weight: 400;
+}
+
+.paper-meta {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.home-more {
+  margin: 1.25rem 0 0;
+  font-size: 0.95rem;
+}
+
+.home-bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 2.5rem;
+}
+
+.home-bottom .section {
+  margin-bottom: 0;
+}
+
+.contact-email {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.65rem;
+  overflow-wrap: anywhere;
+}
+
+.copy-email {
+  padding: 0.1rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.copy-email:hover {
+  border-color: var(--accent);
+}
+
+.copy-email:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.copy-status {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.copy-status:empty {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .home-bottom {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+}
+
 @media (min-width: 720px) {
   .profile-item {
     display: grid;

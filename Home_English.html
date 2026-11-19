@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="iazn4wa_MWoOd2NTZCey7JL8P7xa1tpaHa7GgHRkAQs">
+  <meta name="description" content="Koki Iwakura at Kyushu University. Research in singularity theory of differentiable maps, manifolds with boundary, and non-singular extensions, with publications, talks, and contact information.">
   <title>Koki Iwakura's Homepage</title>
   <link rel="stylesheet" href="style.css">
+  <script src="homepage.js" defer></script>
 </head>
-<body>
+<body class="homepage">
   <header class="header">
     <div class="nav-container">
       <a href="Home_English.html" class="nav-logo">Koki Iwakura</a>
@@ -26,13 +28,58 @@
       <p>Koki Iwakura's Homepage</p>
     </section>
 
-    <div class="content-card">
-      <h2 class="section-title">Upcoming and Recent Seminars / Conferences</h2>
-      <ul class="styled-list">
-        <li>Four-dimensional Topology, Nov 6–7, Tokyo (attendee).</li>
-        <li>Singularity Theory of Differentiable Maps and its Applications, Dec 1–4, Kyoto (attendee).</li>
-        <li>Mathematics of Knots, Tokyo (attendee).</li>
+    <section class="section home-intro" aria-labelledby="research-intro">
+      <h2 class="section-title" id="research-intro">About my research</h2>
+      <p class="home-affiliation">Doctoral Course, Graduate School of Mathematics for Innovation, Kyushu University<br>JSPS Research Fellow (DC2)</p>
+      <p>I study singularity theory of differentiable maps, with particular interests in maps on manifolds with boundary and non-singular extension problems.</p>
+      <nav class="home-quicklinks" aria-label="Research and profile links">
+        <a href="index.2_English.html#publications">Publications & research</a>
+        <a href="index.1_English.html">Profile</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </section>
+
+    <section class="section" aria-labelledby="recent-papers">
+      <h2 class="section-title" id="recent-papers">Papers & preprints</h2>
+      <ul class="paper-highlights">
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2609.14403v1">Gluing ∂-Morin maps on manifolds with boundary and its applications</a>
+          <p class="paper-meta">arXiv:2609.14403v1 · Preparing for submission</p>
+        </li>
+        <li>
+          <a class="paper-title" href="https://arxiv.org/abs/2604.26249">On submersions with definite folds on manifolds with boundary into Euclidean spaces</a>
+          <p class="paper-meta">arXiv:2604.26249 · Submitted</p>
+        </li>
+        <li>
+          <a class="paper-title" href="https://www.sciencedirect.com/science/article/abs/pii/S0166864125004833">Non-singular extensions of horizontal stable fold maps from surfaces to the plane</a>
+          <p class="paper-meta">Topology and its Application 378 (2026), Paper No. 109685</p>
+        </li>
       </ul>
+      <p class="home-more"><a href="index.2_English.html">View all publications and presentations</a></p>
+    </section>
+
+    <div class="home-bottom">
+      <section class="section" aria-labelledby="seminars">
+        <h2 class="section-title" id="seminars">Upcoming & recent meetings</h2>
+        <ul class="styled-list">
+          <li>Four-dimensional Topology, Nov 6–7, Tokyo (attendee).</li>
+          <li>Singularity Theory of Differentiable Maps and its Applications, Dec 1–4, Kyoto (attendee).</li>
+          <li>Mathematics of Knots, Tokyo (attendee).</li>
+        </ul>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title">Contact & academic profiles</h2>
+        <div class="contact-email">
+          <span id="email-address">iwakura.koki.0105(at)gmail.com</span>
+          <button class="copy-email" type="button" data-copy-email data-copy-success="Email address copied." data-copy-error="Could not copy. Please select and copy the email address." hidden>Copy</button>
+        </div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+        <nav class="home-quicklinks" aria-label="Academic profiles">
+          <a href="https://researchmap.jp/iwakurakoki">Researchmap</a>
+          <a href="https://arxiv.org/search/math?query=K.+Iwakura&amp;searchtype=author&amp;abstracts=show&amp;order=-announced_date_first&amp;size=50">arXiv</a>
+        </nav>
+      </section>
     </div>
   </main>
 
