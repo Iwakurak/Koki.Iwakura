@@ -116,10 +116,24 @@ a:focus-visible {
 
 .section {
   margin-bottom: 2.5rem;
+  scroll-margin-top: 1.5rem;
 }
 
 .section:last-child {
   margin-bottom: 0;
+}
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.2rem;
+  margin: -0.5rem 0 2rem;
+  font-size: 0.95rem;
+}
+
+.section-nav a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 .section-title {
@@ -200,6 +214,14 @@ ol.styled-list {
 
 .footer p {
   margin: 0;
+}
+
+@media (min-width: 720px) {
+  .profile-item {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    gap: 1.25rem;
+  }
 }
 
 @media (max-width: 640px) {
